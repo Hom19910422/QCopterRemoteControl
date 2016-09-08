@@ -319,7 +319,7 @@ void arm_iir_lattice_q15(
   }
 
   /* Processing is complete. Now copy last S->numStages samples to start of the buffer    
-     for the preperation of next frame process */
+     for the preparation of next frame process */
   /* Points to the start of the state buffer */
   pStateCurnt = &S->pState[0];
   pState = &S->pState[blockSize];
@@ -436,7 +436,7 @@ void arm_iir_lattice_q15(
   }
 
   /* Processing is complete. Now copy last S->numStages samples to start of the buffer           
-     for the preperation of next frame process */
+     for the preparation of next frame process */
   /* Points to the start of the state buffer */
   pStateCurnt = &S->pState[0];
   pState = &S->pState[blockSize];
