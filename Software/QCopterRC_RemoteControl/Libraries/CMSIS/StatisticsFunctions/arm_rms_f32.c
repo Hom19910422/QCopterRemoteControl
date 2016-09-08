@@ -48,7 +48,7 @@
  * @defgroup RMS Root mean square (RMS)    
  *    
  *     
- * Calculates the Root Mean Sqaure of the elements in the input vector.    
+ * Calculates the Root Mean Square of the elements in the input vector.    
  * The underlying algorithm is used:    
  *    
  * <pre>    
