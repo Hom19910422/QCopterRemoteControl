@@ -613,8 +613,8 @@ void RTC_ExitInitMode(void)
   *         correctly copied into the RTC_TR and RTC_DR shadow registers.   
   * @param  None
   * @retval An ErrorStatus enumeration value:
-  *          - SUCCESS: RTC registers are synchronised
-  *          - ERROR: RTC registers are not synchronised
+  *          - SUCCESS: RTC registers are synchronized
+  *          - ERROR: RTC registers are not synchronized
   */
 ErrorStatus RTC_WaitForSynchro(void)
 {
@@ -629,7 +629,7 @@ ErrorStatus RTC_WaitForSynchro(void)
   /* Clear RSF flag */
   RTC->ISR &= (uint32_t)RTC_RSF_MASK;
     
-  /* Wait the registers to be synchronised */
+  /* Wait the registers to be synchronized */
   do
   {
     synchrostatus = RTC->ISR & RTC_ISR_RSF;
@@ -1616,10 +1616,10 @@ ErrorStatus RTC_WakeUpCmd(FunctionalState NewState)
   */
 
 /**
-  * @brief  Adds or substract one hour from the current time.
+  * @brief  Adds or subtract one hour from the current time.
   * @param  RTC_DayLightSaveOperation: the value of hour adjustment. 
   *          This parameter can be one of the following values:
-  *            @arg RTC_DayLightSaving_SUB1H: Substract one hour (winter time)
+  *            @arg RTC_DayLightSaving_SUB1H: Subtract one hour (winter time)
   *            @arg RTC_DayLightSaving_ADD1H: Add one hour (summer time)
   * @param  RTC_StoreOperation: Specifies the value to be written in the BCK bit 
   *                            in CR register to store the operation.

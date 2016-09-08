@@ -12,15 +12,15 @@
   *          is using in the C source code, usually in main.c. This file contains:
   *           - Configuration section that allows to select:
   *              - The device used in the target application
-  *              - To use or not the peripheral’s drivers in application code(i.e. 
-  *                code will be based on direct access to peripheral’s registers 
+  *              - To use or not the peripheralï¿½s drivers in application code(i.e. 
+  *                code will be based on direct access to peripheralï¿½s registers 
   *                rather than drivers API), this option is controlled by 
   *                "#define USE_STDPERIPH_DRIVER"
   *              - To change few application-specific parameters such as the HSE 
   *                crystal frequency
   *           - Data structures and the address mapping for all peripherals
   *           - Peripheral's registers declarations and bits definition
-  *           - Macros to access peripheral’s registers hardware
+  *           - Macros to access peripheralï¿½s registers hardware
   *  
   ******************************************************************************
   * @attention
@@ -4950,7 +4950,7 @@ typedef struct
 #define  FMC_BCR1_EXTMOD                    ((uint32_t)0x00004000)        /*!<Extended mode enable       */
 #define  FMC_BCR1_ASYNCWAIT                 ((uint32_t)0x00008000)        /*!<Asynchronous wait          */
 #define  FMC_BCR1_CBURSTRW                  ((uint32_t)0x00080000)        /*!<Write burst enable         */
-#define  FMC_BCR1_CCLKEN                    ((uint32_t)0x00100000)        /*!<Continous clock enable     */
+#define  FMC_BCR1_CCLKEN                    ((uint32_t)0x00100000)        /*!<Continuous clock enable     */
 
 /******************  Bit definition for FMC_BCR2 register  *******************/
 #define  FMC_BCR2_MBKEN                     ((uint32_t)0x00000001)        /*!<Memory bank enable bit                 */
@@ -5924,7 +5924,7 @@ typedef struct
 
 #define  FMC_SDRTR_COUNT                    ((uint32_t)0x00003FFE)        /*!<COUNT[12:0] bits (Refresh timer count) */
 
-#define  FMC_SDRTR_REIE                     ((uint32_t)0x00004000)        /*!<RES interupt enable */
+#define  FMC_SDRTR_REIE                     ((uint32_t)0x00004000)        /*!<RES interrupt enable */
 
 /******************  Bit definition for FMC_SDSR register  ******************/
 #define  FMC_SDSR_RE                        ((uint32_t)0x00000001)        /*!<Refresh error flag */
@@ -9024,7 +9024,7 @@ typedef struct
   #define ETH_DMASR_RPS_Waiting         ((uint32_t)0x00060000)  /* Running - waiting for packet */
   #define ETH_DMASR_RPS_Suspended       ((uint32_t)0x00080000)  /* Suspended - Rx Descriptor unavailable */
   #define ETH_DMASR_RPS_Closing         ((uint32_t)0x000A0000)  /* Running - closing descriptor */
-  #define ETH_DMASR_RPS_Queuing         ((uint32_t)0x000E0000)  /* Running - queuing the recieve frame into host memory */
+  #define ETH_DMASR_RPS_Queuing         ((uint32_t)0x000E0000)  /* Running - queuing the receive frame into host memory */
 #define ETH_DMASR_NIS        ((uint32_t)0x00010000)  /* Normal interrupt summary */
 #define ETH_DMASR_AIS        ((uint32_t)0x00008000)  /* Abnormal interrupt summary */
 #define ETH_DMASR_ERS        ((uint32_t)0x00004000)  /* Early receive status */

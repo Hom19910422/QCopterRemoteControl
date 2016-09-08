@@ -99,7 +99,7 @@ arm_status arm_sqrt_q15(
     /*Store as integer */
     tempconv.floatval = temp_float1;
     bits_val1 = tempconv.fracval;
-    /* Subtract the shifted value from the magic number to give intial guess */
+    /* Subtract the shifted value from the magic number to give initial guess */
     bits_val1 = 0x5f3759df - (bits_val1 >> 1);  // gives initial guess  
     /* Store as float */
     tempconv.fracval = bits_val1;

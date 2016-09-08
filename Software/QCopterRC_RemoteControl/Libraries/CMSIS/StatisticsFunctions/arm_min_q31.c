@@ -77,7 +77,7 @@ void arm_min_q31(
   count = 0u;
   /* Initialise the index value to zero. */
   outIndex = 0u;
-  /* Load first input value that act as reference value for comparision */
+  /* Load first input value that act as reference value for comparison */
   out = *pSrc++;
 
 
@@ -144,7 +144,7 @@ void arm_min_q31(
 
   /* Initialise the index value to zero. */
   outIndex = 0u;
-  /* Load first input value that act as reference value for comparision */
+  /* Load first input value that act as reference value for comparison */
   out = *pSrc++;
 
 #endif //      #ifndef ARM_MATH_CM0_FAMILY
