@@ -167,7 +167,7 @@ void arm_cmplx_conj_f32(
 
   while(blkCnt > 0u)
   {
-    /* realOut + j (imagOut) = realIn + j (-1) imagIn */
+    /* realOut + j (imagOut) = realIn + j (-1) imagine */
     /* Calculate Complex Conjugate and then store the results in the destination buffer. */
     *pDst++ = *pSrc++;
     *pDst++ = -*pSrc++;

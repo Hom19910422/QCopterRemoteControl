@@ -86,7 +86,7 @@ void arm_cmplx_mag_f32(
   float32_t * pDst,
   uint32_t numSamples)
 {
-  float32_t realIn, imagIn;                      /* Temporary variables to hold input values */
+  float32_t realIn, imagine;                      /* Temporary variables to hold input values */
 
 #ifndef ARM_MATH_CM0_FAMILY
 
@@ -103,21 +103,21 @@ void arm_cmplx_mag_f32(
 
     /* C[0] = sqrt(A[0] * A[0] + A[1] * A[1]) */
     realIn = *pSrc++;
-    imagIn = *pSrc++;
+    imagine = *pSrc++;
     /* store the result in the destination buffer. */
-    arm_sqrt_f32((realIn * realIn) + (imagIn * imagIn), pDst++);
+    arm_sqrt_f32((realIn * realIn) + (imagine * imagine), pDst++);
 
     realIn = *pSrc++;
-    imagIn = *pSrc++;
-    arm_sqrt_f32((realIn * realIn) + (imagIn * imagIn), pDst++);
+    imagine = *pSrc++;
+    arm_sqrt_f32((realIn * realIn) + (imagine * imagine), pDst++);
 
     realIn = *pSrc++;
-    imagIn = *pSrc++;
-    arm_sqrt_f32((realIn * realIn) + (imagIn * imagIn), pDst++);
+    imagine = *pSrc++;
+    arm_sqrt_f32((realIn * realIn) + (imagine * imagine), pDst++);
 
     realIn = *pSrc++;
-    imagIn = *pSrc++;
-    arm_sqrt_f32((realIn * realIn) + (imagIn * imagIn), pDst++);
+    imagine = *pSrc++;
+    arm_sqrt_f32((realIn * realIn) + (imagine * imagine), pDst++);
 
 
     /* Decrement the loop counter */
@@ -132,9 +132,9 @@ void arm_cmplx_mag_f32(
   {
     /* C[0] = sqrt(A[0] * A[0] + A[1] * A[1]) */
     realIn = *pSrc++;
-    imagIn = *pSrc++;
+    imagine = *pSrc++;
     /* store the result in the destination buffer. */
-    arm_sqrt_f32((realIn * realIn) + (imagIn * imagIn), pDst++);
+    arm_sqrt_f32((realIn * realIn) + (imagine * imagine), pDst++);
 
     /* Decrement the loop counter */
     blkCnt--;
@@ -148,9 +148,9 @@ void arm_cmplx_mag_f32(
   {
     /* out = sqrt((real * real) + (imag * imag)) */
     realIn = *pSrc++;
-    imagIn = *pSrc++;
+    imagine = *pSrc++;
     /* store the result in the destination buffer. */
-    arm_sqrt_f32((realIn * realIn) + (imagIn * imagIn), pDst++);
+    arm_sqrt_f32((realIn * realIn) + (imagine * imagine), pDst++);
 
     /* Decrement the loop counter */
     numSamples--;
