@@ -680,7 +680,7 @@ void LTDC_CLUTInit(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_CLUT_InitTypeDef* LTDC_
 
 void LTDC_CLUTStructInit(LTDC_CLUT_InitTypeDef* LTDC_CLUT_InitStruct)
 {
-  /*!< Initialize the CLUT adress and RGB values */
+  /*!< Initialize the CLUT address and RGB values */
   LTDC_CLUT_InitStruct->LTDC_CLUTAdress = 0x00;
   LTDC_CLUT_InitStruct->LTDC_BlueValue = 0x00;
   LTDC_CLUT_InitStruct->LTDC_GreenValue = 0x00;
