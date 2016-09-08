@@ -75,7 +75,7 @@ void arm_max_q7(
   count = 0u;
   /* Initialise the index value to zero. */
   outIndex = 0u;
-  /* Load first input value that act as reference value for comparision */
+  /* Load first input value that act as reference value for comparison */
   out = *pSrc++;
 
   /* Loop unrolling */
@@ -142,7 +142,7 @@ void arm_max_q7(
 
   /* Initialise the index value to zero. */
   outIndex = 0u;
-  /* Load first input value that act as reference value for comparision */
+  /* Load first input value that act as reference value for comparison */
   out = *pSrc++;
 
   blkCnt = (blockSize - 1u);
